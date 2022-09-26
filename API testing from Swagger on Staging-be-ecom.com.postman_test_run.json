@@ -1,0 +1,869 @@
+{
+	"id": "b4e6088c-4400-487b-a1f8-4358ae38c3b4",
+	"name": "API testing from Swagger on Staging-be-ecom.com",
+	"timestamp": "2022-09-26T21:30:29.268Z",
+	"collection_id": "23155930-472f5fe3-cb42-4465-a7c7-7d97e0dd218d",
+	"folder_id": 0,
+	"environment_id": "23155930-cdd485fc-6e67-4e83-b80e-ab56b01b5ede",
+	"totalPass": 43,
+	"totalFail": 3,
+	"results": [
+		{
+			"id": "86497540-1bc5-4a50-8261-763aab8101fe",
+			"name": "\tAs a user, I should be able to sign up with a Valid Email that I have not used to sign up on this website before, Name, and Password.",
+			"url": "https://staging-be-ecom.techserve4u.com/api/user/signup",
+			"time": 443,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"As a user, I should be able to sign up with a Valid Email that I have not used to sign up on this website before, Name, and Password.": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should be able to sign up with a Valid Email that I have not used to sign up on this website before, Name, and Password.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				443
+			],
+			"allTests": [
+				{
+					"As a user, I should be able to sign up with a Valid Email that I have not used to sign up on this website before, Name, and Password.": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "ccff6624-2d8e-4838-8dcc-59de8d8a8af8",
+			"name": "\tAs a user, I should not be able to sign up more than once with one email address I have already registered with.",
+			"url": "https://staging-be-ecom.techserve4u.com/api/user/signup",
+			"time": 53,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"As a user, I should not be able to sign up more than once with one email address I have already registered with.": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should not be able to sign up more than once with one email address I have already registered with.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				53
+			],
+			"allTests": [
+				{
+					"As a user, I should not be able to sign up more than once with one email address I have already registered with.": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "1a6a9bc4-1bab-4578-95d8-4658b6d3a735",
+			"name": "\tAs a user, I should not be able to sign up without an email.",
+			"url": "https://staging-be-ecom.techserve4u.com/api/user/signup",
+			"time": 41,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"As a user, I should not be able to sign up without an email.": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should not be able to sign up without an email.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				41
+			],
+			"allTests": [
+				{
+					"As a user, I should not be able to sign up without an email.": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "dfd24f62-7eb6-435b-9402-3c392d245a20",
+			"name": "\tAs a user, I should not be able to sign up without a Password.",
+			"url": "https://staging-be-ecom.techserve4u.com/api/user/signup",
+			"time": 39,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"As a user, I should not be able to sign up without a Password.": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should not be able to sign up without a Password.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				39
+			],
+			"allTests": [
+				{
+					"As a user, I should not be able to sign up without a Password.": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "fe423db0-7429-4f18-a230-b426a8b64dc1",
+			"name": "\tAs a user, I should not be able to sign up without a Name.",
+			"url": "https://staging-be-ecom.techserve4u.com/api/user/signup",
+			"time": 58,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"As a user, I should not be able to sign up without a Name.": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should not be able to sign up without a Name.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				58
+			],
+			"allTests": [
+				{
+					"As a user, I should not be able to sign up without a Name.": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "c63c5fc9-5355-4544-9524-f4d6751d95c9",
+			"name": "\tAs a user, I should receive the OTP in the given email.",
+			"url": "https://staging-be-ecom.techserve4u.com/api/user/verifyotp",
+			"time": 55,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"As a user, I should receive the OTP in the given email.": false,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should receive the OTP in the given email.": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				55
+			],
+			"allTests": [
+				{
+					"As a user, I should receive the OTP in the given email.": false,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "3bf5eba9-b41b-4a27-92b6-d277088fb1fb",
+			"name": "\tAs a user, I should not be able to use the same OTP more than once.",
+			"url": "https://staging-be-ecom.techserve4u.com/api/user/verifyotp",
+			"time": 44,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"As a user, I should not be able to use the same OTP more than once.": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should not be able to use the same OTP more than once.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				44
+			],
+			"allTests": [
+				{
+					"As a user, I should not be able to use the same OTP more than once.": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "5cc937eb-94ee-473c-8525-fb60db9c48f7",
+			"name": "\tAs a user, I should be able to sign in with a valid email that is registered and a password",
+			"url": "https://staging-be-ecom.techserve4u.com/api/user/signin",
+			"time": 137,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"As a user, I should be able to sign in with a valid email that is registered and a password,": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should be able to sign in with a valid email that is registered and a password,": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				137
+			],
+			"allTests": [
+				{
+					"As a user, I should be able to sign in with a valid email that is registered and a password,": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "2ac150ea-fb7b-4534-8270-49e28a59fdca",
+			"name": "\tAs a user, I should be able to sign in within 500ms after putting my valid email and password.",
+			"url": "https://staging-be-ecom.techserve4u.com/api/user/signin",
+			"time": 225,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"As a user, I should be able to sign in within 500ms after putting my valid email and password.": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should be able to sign in within 500ms after putting my valid email and password.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				225
+			],
+			"allTests": [
+				{
+					"As a user, I should be able to sign in within 500ms after putting my valid email and password.": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "d49af3f2-f7b2-4add-8c7b-9dab5ecdbfd7",
+			"name": "\tAs a user, I should not be able to sign in without signing up.",
+			"url": "https://staging-be-ecom.techserve4u.com/api/user/signin",
+			"time": 49,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"As a user, I should not be able to sign in without signing up.": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should not be able to sign in without signing up.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				49
+			],
+			"allTests": [
+				{
+					"As a user, I should not be able to sign in without signing up.": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "15a3d976-2bf7-4149-896c-d751a51d4328",
+			"name": "\tAs a user, I should not be able to sign in without a password.",
+			"url": "https://staging-be-ecom.techserve4u.com/api/user/signin",
+			"time": 41,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"As a user, I should not be able to sign in without a password..": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should not be able to sign in without a password..": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				41
+			],
+			"allTests": [
+				{
+					"As a user, I should not be able to sign in without a password..": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "70198a4d-301c-4bf4-ac55-16e202eb701a",
+			"name": "\tAs a user, I should not be able to sign in without an email.",
+			"url": "https://staging-be-ecom.techserve4u.com/api/user/signin",
+			"time": 38,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"As a user, I should not be able to sign in without an email.": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should not be able to sign in without an email.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				38
+			],
+			"allTests": [
+				{
+					"As a user, I should not be able to sign in without an email.": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "0d43da45-070d-4914-b69d-d8bc688243f8",
+			"name": "\tAs a user, I should not be able to sign in with the wrong email or password.",
+			"url": "https://staging-be-ecom.techserve4u.com/api/user/signin",
+			"time": 40,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"As a user, I should not be able to sign in with the wrong email or password.": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should not be able to sign in with the wrong email or password.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				40
+			],
+			"allTests": [
+				{
+					"As a user, I should not be able to sign in with the wrong email or password.": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "3c567185-a6b6-4339-98d5-f4769c2bc202",
+			"name": "\tAs a user, I should be able to add my mobile number to my profile.",
+			"url": "https://staging-be-ecom.techserve4u.com/api/user/update",
+			"time": 53,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"As a user, I should be able to add my mobile number to my profile.": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should be able to add my mobile number to my profile.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				53
+			],
+			"allTests": [
+				{
+					"As a user, I should be able to add my mobile number to my profile.": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "a7f379cc-fdbe-4869-b20a-c19f47779f7b",
+			"name": "\tAs a user, I should be able to add my name to the profile.",
+			"url": "https://staging-be-ecom.techserve4u.com/api/user/update",
+			"time": 48,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"As a user, I should be able to add my name to the profile.": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should be able to add my name to the profile.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				48
+			],
+			"allTests": [
+				{
+					"As a user, I should be able to add my name to the profile.": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "392611c4-20ad-42b5-9cbb-4cab0adee41d",
+			"name": "\tAs a user, I should be able to add my gender to the profile.",
+			"url": "https://staging-be-ecom.techserve4u.com/api/user/update",
+			"time": 46,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"As a user, I should be able to add my gender to the profile.": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should be able to add my gender to the profile.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				46
+			],
+			"allTests": [
+				{
+					"As a user, I should be able to add my gender to the profile.": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "86901c76-084b-45f1-922b-ff07dae6ecb4",
+			"name": "\tAs a user, I should be able to add my birthdate to the profile.",
+			"url": "https://staging-be-ecom.techserve4u.com/api/user/update",
+			"time": 47,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"As a user, I should be able to add my birthdate to the profile.": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should be able to add my birthdate to the profile.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				47
+			],
+			"allTests": [
+				{
+					"As a user, I should be able to add my birthdate to the profile.": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "074f13f4-24b7-4b1c-bc76-9b04992f4f4d",
+			"name": "\tAs a user, I should be able to Update my Name, Number, Gender, and DOB in my profile.",
+			"url": "https://staging-be-ecom.techserve4u.com/api/user/update",
+			"time": 53,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"As a user, I should be able to Update my Name, Number, Gender, and DOB in my profile.": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should be able to Update my Name, Number, Gender, and DOB in my profile.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				53
+			],
+			"allTests": [
+				{
+					"As a user, I should be able to Update my Name, Number, Gender, and DOB in my profile.": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "0d332dc5-7604-4ebc-99f1-b358932d66fd",
+			"name": "\tAs a user, I should not be able to write my gender, I should only be able to select from specific 3. Male/Female/Other",
+			"url": "https://staging-be-ecom.techserve4u.com/api/user/update",
+			"time": 49,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"As a user, I should not be able to write my gender, I should only be able to select from specific 3, Male, Female, Other.": false,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should not be able to write my gender, I should only be able to select from specific 3, Male, Female, Other.": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				49
+			],
+			"allTests": [
+				{
+					"As a user, I should not be able to write my gender, I should only be able to select from specific 3, Male, Female, Other.": false,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "c54ac922-fb72-49d6-803f-ed3a6e0591c9",
+			"name": "\tAs a user, I should not be able to select any future date in Date of birth. I should only be able to select 14 years past dates.",
+			"url": "https://staging-be-ecom.techserve4u.com/api/user/update",
+			"time": 53,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"As a user, I should not be able to select any future date in Date of birth. I should only be able to select 14 years past dates.": false,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should not be able to select any future date in Date of birth. I should only be able to select 14 years past dates.": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				53
+			],
+			"allTests": [
+				{
+					"As a user, I should not be able to select any future date in Date of birth. I should only be able to select 14 years past dates.": false,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "1be8ffe2-3972-432b-bcc7-818326cde518",
+			"name": "\tAs a user, I should be able to type anything on the search bar and search it.",
+			"url": "https://staging-be-ecom.techserve4u.com/api/product/getsearchproducts?search=randominput546",
+			"time": 59,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"As a user, I should be able to type anything on the search bar and search it.": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should be able to type anything on the search bar and search it.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				59
+			],
+			"allTests": [
+				{
+					"As a user, I should be able to type anything on the search bar and search it.": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "617b6c67-ffb3-418b-b8d2-4628ac368b37",
+			"name": "\tAs a user, I should see products if I don’t type anything and click the search button.",
+			"url": "https://staging-be-ecom.techserve4u.com/api/product/getsearchproducts",
+			"time": 59,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"As a user, I should see products if I don’t type anything and click the search button.": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should see products if I don’t type anything and click the search button.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				59
+			],
+			"allTests": [
+				{
+					"As a user, I should see products if I don’t type anything and click the search button.": true,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "8deccf27-0177-4be9-a6d0-1a0733e192c8",
+			"name": "\tAs a user, I should not see an error for clicking the search button without typing anything.",
+			"url": "https://staging-be-ecom.techserve4u.com/api/product/getsearchproducts",
+			"time": 61,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"As a user, I should not see an error for clicking the search button without typing anything.": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"As a user, I should not see an error for clicking the search button without typing anything.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				61
+			],
+			"allTests": [
+				{
+					"As a user, I should not see an error for clicking the search button without typing anything.": true,
+					"Schema is valid": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1791,
+	"collection": {
+		"requests": [
+			{
+				"id": "86497540-1bc5-4a50-8261-763aab8101fe",
+				"method": "POST"
+			},
+			{
+				"id": "ccff6624-2d8e-4838-8dcc-59de8d8a8af8",
+				"method": "POST"
+			},
+			{
+				"id": "1a6a9bc4-1bab-4578-95d8-4658b6d3a735",
+				"method": "POST"
+			},
+			{
+				"id": "dfd24f62-7eb6-435b-9402-3c392d245a20",
+				"method": "POST"
+			},
+			{
+				"id": "fe423db0-7429-4f18-a230-b426a8b64dc1",
+				"method": "POST"
+			},
+			{
+				"id": "c63c5fc9-5355-4544-9524-f4d6751d95c9",
+				"method": "POST"
+			},
+			{
+				"id": "3bf5eba9-b41b-4a27-92b6-d277088fb1fb",
+				"method": "POST"
+			},
+			{
+				"id": "5cc937eb-94ee-473c-8525-fb60db9c48f7",
+				"method": "POST"
+			},
+			{
+				"id": "2ac150ea-fb7b-4534-8270-49e28a59fdca",
+				"method": "POST"
+			},
+			{
+				"id": "d49af3f2-f7b2-4add-8c7b-9dab5ecdbfd7",
+				"method": "POST"
+			},
+			{
+				"id": "15a3d976-2bf7-4149-896c-d751a51d4328",
+				"method": "POST"
+			},
+			{
+				"id": "70198a4d-301c-4bf4-ac55-16e202eb701a",
+				"method": "POST"
+			},
+			{
+				"id": "0d43da45-070d-4914-b69d-d8bc688243f8",
+				"method": "POST"
+			},
+			{
+				"id": "3c567185-a6b6-4339-98d5-f4769c2bc202",
+				"method": "PATCH"
+			},
+			{
+				"id": "a7f379cc-fdbe-4869-b20a-c19f47779f7b",
+				"method": "PATCH"
+			},
+			{
+				"id": "392611c4-20ad-42b5-9cbb-4cab0adee41d",
+				"method": "PATCH"
+			},
+			{
+				"id": "86901c76-084b-45f1-922b-ff07dae6ecb4",
+				"method": "PATCH"
+			},
+			{
+				"id": "074f13f4-24b7-4b1c-bc76-9b04992f4f4d",
+				"method": "PATCH"
+			},
+			{
+				"id": "0d332dc5-7604-4ebc-99f1-b358932d66fd",
+				"method": "PATCH"
+			},
+			{
+				"id": "c54ac922-fb72-49d6-803f-ed3a6e0591c9",
+				"method": "PATCH"
+			},
+			{
+				"id": "1be8ffe2-3972-432b-bcc7-818326cde518",
+				"method": "GET"
+			},
+			{
+				"id": "617b6c67-ffb3-418b-b8d2-4628ac368b37",
+				"method": "GET"
+			},
+			{
+				"id": "8deccf27-0177-4be9-a6d0-1a0733e192c8",
+				"method": "GET"
+			}
+		]
+	}
+}
